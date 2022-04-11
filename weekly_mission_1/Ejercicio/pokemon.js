@@ -1,13 +1,16 @@
+// definimos la clase Pokemon
 class Pokemon {
     constructor(name) {
         this.name = name
     }
+// designamos los metodos 
     sayHello() {
-        console.log(`Mi pokemon + ${this.name} + te saluda`);
+        console.log(`Mi pokemon ${this.name} te saluda`);
     }
-    sayMessage() {
-        console.log(`Mi pokemon + ${this.name} + dice: Heey¡`);
+    sayMessage(msg) {
+        console.log(`Mi pokemon ${this.name} dice: Heey¡`);
     }
 }
 
-module.exports = pokemon
+// exportamos el modulo
+module.exports = Pokemon
